@@ -20,11 +20,11 @@ const mainContent = document.querySelector('.main-content');
 
 // - TOP CONTENT SELECTORS -
 const topContent = document.querySelector('.top-content');
-// features
+//features
 const features = topContent.querySelector('.text-content:nth-of-type(1)');
 const featuresHeading = features.querySelector('h4');
 const featuresContent = features.querySelector('p');
-// about
+//about
 const about = topContent.querySelector('.text-content:nth-of-type(2)');
 const aboutHeading = about.querySelector('h4');
 const aboutContent = about.querySelector('p');
@@ -34,15 +34,15 @@ const middleImg = document.querySelector("#middle-img");
 
 // - BOTTOM SELECTORS - 
 const bottomContent = document.querySelector('.bottom-content');
-// services
+//services
 const services = bottomContent.querySelector('.text-content:nth-of-type(1)');
 const servicesHeading = services.querySelector('h4');
 const servicesContent = services.querySelector('p');
-// product
+//product
 const product = bottomContent.querySelector('.text-content:nth-of-type(2)');
 const productHeading = product.querySelector('h4');
 const productContent = product.querySelector('p');
-// vision
+//vision
 const vision = bottomContent.querySelector('.text-content:nth-of-type(3)');
 const visionHeading = vision.querySelector('h4');
 const visionContent = vision.querySelector('p');
@@ -136,3 +136,25 @@ phone.textContent = siteContent["contact"]["phone"];
 email.textContent = siteContent["contact"]["email"];
 
 copywright.textContent = siteContent["footer"]["copyright"];
+
+// CHANGING CONTENT IN THE DOM
+nav1.style.color = 'green';
+nav2.style.color = 'green';
+nav3.style.color = 'green';
+nav4.style.color = 'green';
+nav5.style.color = 'green';
+nav6.style.color = 'green';
+
+//new links
+const blogLink = document.createElement('a');
+blogLink.textContent = 'Blog';
+blogLink.href = '#';
+nav.appendChild(blogLink);
+blogLink.style.color = 'green';
+
+const submitLink = document.createElement('a');
+submitLink.textContent = 'Submit';
+submitLink.href = '#';
+nav.prepend(submitLink);
+submitLink.style.color = 'green';
+
