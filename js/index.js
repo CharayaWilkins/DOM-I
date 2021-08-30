@@ -13,7 +13,7 @@ const cta = document.querySelector('.cta');
 const ctaText = cta.querySelector('.cta-text');
 const ctaHeading = ctaText.querySelector('h1');
 const ctaButton = ctaText.querySelector('button');
-const ctaImg = document.querySelector('#logo-img');
+const ctaImg = document.querySelector('#cta-img');
 
 // - MAIN CONTENT SELECTORS -
 const mainContent = document.querySelector('.main-content');
@@ -129,3 +129,10 @@ productHeading.textContent = siteContent["main-content"]["product-h4"];
 productContent.textContent = siteContent["main-content"]["product-content"];
 visionHeading.textContent = siteContent["main-content"]["vision-h4"];
 visionContent.textContent = siteContent["main-content"]["vision-content"];
+
+contactHeading.textContent = siteContent["contact"]["contact-h4"];
+address.textContent = siteContent["contact"]["address"];
+phone.textContent = siteContent["contact"]["phone"];
+email.textContent = siteContent["contact"]["email"];
+
+copywright.textContent = siteContent["footer"]["copyright"];
