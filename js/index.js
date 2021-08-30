@@ -1,3 +1,30 @@
+//- Nav Selectors -
+const nav = document.querySelector('nav');
+const nav1 = nav.querySelector('a:nth-of-type(1)');
+const nav2 = nav1.nextElementSibling;
+const nav3 = nav2.nextElementSibling;
+const nav4 = nav3.nextElementSibling;
+const nav5 = nav4.nextElementSibling;
+const nav6 = nav5.nextElementSibling;
+
+// - cta Selectors -
+const cta = document.querySelector('.cta');
+const ctaHeading = cta.querySelector('h1');
+const ctaButton = cta.querySelector('button');
+const ctaImgSrc = cta.querySelector('#logo-img src');
+
+// - main content selectors -
+const mainContent = document.querySelector('.main-content');
+
+// - top content selectors -
+const topContent = document.querySelector('.top-content');
+const features = topContent.querySelector('.text-content:nth-of-type(1)');
+const featuresHeading = features.querySelector('h4');
+const featuresContent = features.querySelector('p');
+const about = topContent.querySelector('.text-content:nth-of-type(2)');
+const aboutHeading = about.querySelector('h4');
+const aboutContent = about.querySelector('p');
+)
 const siteContent = {
   "nav": {
     "nav-item-1": "Services",
