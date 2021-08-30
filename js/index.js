@@ -1,5 +1,6 @@
 //- NAV SELECTORS -
-const nav = document.querySelector('nav');
+const navContainer = document.querySelector('.container');
+const nav = navContainer.querySelector('nav');
 const nav1 = nav.querySelector('a:nth-of-type(1)');
 const nav2 = nav1.nextElementSibling;
 const nav3 = nav2.nextElementSibling;
@@ -9,9 +10,10 @@ const nav6 = nav5.nextElementSibling;
 
 // - CTA SELECTORS -
 const cta = document.querySelector('.cta');
-const ctaHeading = cta.querySelector('h1');
-const ctaButton = cta.querySelector('button');
-const ctaImgSrc = document.querySelector('#logo-img');
+const ctaText = cta.querySelector('.cta-text');
+const ctaHeading = ctaText.querySelector('h1');
+const ctaButton = ctaText.querySelector('button');
+const ctaImg = document.querySelector('#logo-img');
 
 // - MAIN CONTENT SELECTORS -
 const mainContent = document.querySelector('.main-content');
@@ -102,4 +104,16 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// UPDATING THE DOM
+nav1.textContent = siteContent["nav"]["nav-item-1"];
+nav2.textContent = siteContent["nav"]["nav-item-2"];
+nav3.textContent = siteContent["nav"]["nav-item-3"];
+nav4.textContent = siteContent["nav"]["nav-item-4"];
+nav5.textContent = siteContent["nav"]["nav-item-5"];
+nav6.textContent = siteContent["nav"]["nav-item-6"];
+
+ctaHeading.textContent = siteContent["cta"]["h1"];
+ctaButton.textContent = siteContent["cta"]["button"];
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
