@@ -117,3 +117,15 @@ nav6.textContent = siteContent["nav"]["nav-item-6"];
 ctaHeading.textContent = siteContent["cta"]["h1"];
 ctaButton.textContent = siteContent["cta"]["button"];
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+featuresHeading.textContent = siteContent["main-content"]["features-h4"];
+featuresContent.textContent = siteContent["main-content"]["features-content"];
+aboutHeading.textContent = siteContent["main-content"]["about-h4"];
+aboutContent.textContent = siteContent["main-content"]["about-content"];
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+servicesHeading.textContent = siteContent["main-content"]["services-h4"];
+servicesContent.textContent = siteContent["main-content"]["services-content"];
+productHeading.textContent = siteContent["main-content"]["product-h4"];
+productContent.textContent = siteContent["main-content"]["product-content"];
+visionHeading.textContent = siteContent["main-content"]["vision-h4"];
+visionContent.textContent = siteContent["main-content"]["vision-content"];
