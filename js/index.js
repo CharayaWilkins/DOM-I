@@ -1,4 +1,4 @@
-//- Nav Selectors -
+//- NAV SELECTORS -
 const nav = document.querySelector('nav');
 const nav1 = nav.querySelector('a:nth-of-type(1)');
 const nav2 = nav1.nextElementSibling;
@@ -7,24 +7,60 @@ const nav4 = nav3.nextElementSibling;
 const nav5 = nav4.nextElementSibling;
 const nav6 = nav5.nextElementSibling;
 
-// - cta Selectors -
+// - CTA SELECTORS -
 const cta = document.querySelector('.cta');
 const ctaHeading = cta.querySelector('h1');
 const ctaButton = cta.querySelector('button');
-const ctaImgSrc = cta.querySelector('#logo-img src');
+const ctaImgSrc = document.querySelector('#logo-img');
 
-// - main content selectors -
+// - MAIN CONTENT SELECTORS -
 const mainContent = document.querySelector('.main-content');
 
-// - top content selectors -
+// - TOP CONTENT SELECTORS -
 const topContent = document.querySelector('.top-content');
+// features
 const features = topContent.querySelector('.text-content:nth-of-type(1)');
 const featuresHeading = features.querySelector('h4');
 const featuresContent = features.querySelector('p');
+// about
 const about = topContent.querySelector('.text-content:nth-of-type(2)');
 const aboutHeading = about.querySelector('h4');
 const aboutContent = about.querySelector('p');
-)
+
+// - MIDDLE SELECTORS (image) -
+const middleImg = document.querySelector("#middle-img");
+
+// - BOTTOM SELECTORS - 
+const bottomContent = document.querySelector('.bottom-content');
+// services
+const services = bottomContent.querySelector('.text-content:nth-of-type(1)');
+const servicesHeading = services.querySelector('h4');
+const servicesContent = services.querySelector('p');
+// product
+const product = bottomContent.querySelector('.text-content:nth-of-type(2)');
+const productHeading = product.querySelector('h4');
+const productContent = product.querySelector('p');
+// vision
+const vision = bottomContent.querySelector('.text-content:nth-of-type(3)');
+const visionHeading = vision.querySelector('h4');
+const visionContent = vision.querySelector('p');
+
+// - CONTACT SELECTORS -
+const contact = document.querySelector('.contact');
+const contactHeading = contact.querySelector('h4');
+const address = contact.querySelector('p:nth-of-type(1)');
+const phone = contact.querySelector('p:nth-of-type(2)');
+const email = contact.querySelector('p:nth-of-type(3)');
+
+// - FOOTER SELECTORS -
+const footer = document.querySelector('footer');
+const copywright = footer.querySelector('p');
+
+
+
+
+
+
 const siteContent = {
   "nav": {
     "nav-item-1": "Services",
